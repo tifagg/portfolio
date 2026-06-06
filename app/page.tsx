@@ -27,23 +27,29 @@ export default function Home() {
           <p className="text-center">Current skills unlocked</p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
-            {["Python", "C++", "JavaScript", "HTML/CSS", "Next.js", "Cyber"].map(
-              (skill, index) => (
-                <span key={skill} className="nes-badge">
-                  <span
-                    className={
-                      index % 3 === 0
-                        ? "is-dark"
-                        : index % 3 === 1
+            {[
+              "Python",
+              "C++",
+              "JavaScript",
+              "HTML/CSS",
+              "Next.js",
+              "Rust",
+              "Cyber",
+            ].map((skill, index) => (
+              <span key={skill} className="nes-badge">
+                <span
+                  className={
+                    index % 3 === 0
+                      ? "is-dark"
+                      : index % 3 === 1
                         ? "is-primary"
                         : "is-success"
-                    }
-                  >
-                    {skill}
-                  </span>
+                  }
+                >
+                  {skill}
                 </span>
-              )
-            )}
+              </span>
+            ))}
           </div>
         </div>
       </div>
