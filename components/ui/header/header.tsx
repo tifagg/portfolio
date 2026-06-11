@@ -28,7 +28,7 @@ export default function Header() {
 
             <div className="flex gap-2 justify-center items-center">
               <a
-                href="https://github.com/tifalabs"
+                href="https://github.com/teefspiracy"
                 target="_blank"
                 rel="noreferrer"
                 className="nes-btn"

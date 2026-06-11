@@ -2,7 +2,7 @@ export const projects = [
   {
     slug: "security-learning-lab",
     title: "security-learning-lab",
-    repo: "https://github.com/tifalabs/security-learning-lab",
+    repo: "https://github.com/teefspiracy/security-learning-lab",
     status: "Private / in progress",
     stack: ["Cybersecurity", "Notes", "Labs", "Research"],
     summary:
@@ -22,7 +22,7 @@ export const projects = [
   {
     slug: "cybpick",
     title: "cybpick",
-    repo: "https://github.com/tifalabs/cybpick",
+    repo: "https://github.com/teefspiracy/cybpick",
     status: "Private / in progress",
     stack: ["Cyber", "Tools", "Experiment"],
     summary: "A cyber-themed experimental tool from the Tifa Labs archive.",
@@ -35,7 +35,7 @@ export const projects = [
   {
     slug: "android-ai-server",
     title: "android-ai-server",
-    repo: "https://github.com/tifalabs/android-ai-server",
+    repo: "https://github.com/teefspiracy/android-ai-server",
     status: "Private / in progress",
     stack: ["Android", "AI", "Server", "Networking"],
     summary:
@@ -53,7 +53,7 @@ export const projects = [
   {
     slug: "portfolio",
     title: "portfolio",
-    repo: "https://github.com/tifalabs/portfolio",
+    repo: "https://github.com/teefspiracy/portfolio",
     status: "Public / active",
     stack: ["Next.js", "TypeScript", "Tailwind", "NES.css", "Netlify"],
     summary:
@@ -73,7 +73,7 @@ export const projects = [
   {
     slug: "node-top",
     title: "node-top",
-    repo: "https://github.com/tifalabs/node-top",
+    repo: "https://github.com/teefspiracy/node-top",
     status: "Private / in progress",
     stack: ["Node.js", "JavaScript", "CLI"],
     summary: "A Node.js experiment from the Tifa Labs repo collection.",
@@ -86,7 +86,7 @@ export const projects = [
   {
     slug: "aegis-core",
     title: "aegis-core",
-    repo: "https://github.com/tifalabs/aegis-core",
+    repo: "https://github.com/teefspiracy/aegis-core",
     status: "Private / in progress",
     stack: ["Security", "Core Systems", "Experiment"],
     summary:
