@@ -6,37 +6,37 @@ import React, { useState } from "react";
 const projects = [
   {
     title: "security-learning-lab",
-    href: "https://github.com/teefspiracy/security-learning-lab",
+    href: "https://github.com/tifagg/security-learning-lab",
     theme: "dark",
     desc: "Cybersecurity learning lab for notes, safe practice, and security concepts.",
   },
   {
     title: "cybpick",
-    href: "https://github.com/teefspiracy/cybpick",
+    href: "https://github.com/tifagg/cybpick",
     theme: "light",
     desc: "Cyber-themed tool/project experiment from the Tifa Labs archive.",
   },
   {
     title: "android-ai-server",
-    href: "https://github.com/teefspiracy/android-ai-server",
+    href: "https://github.com/tifagg/android-ai-server",
     theme: "dark",
     desc: "Android + AI server experiment for local/networked AI workflows.",
   },
   {
     title: "portfolio",
-    href: "https://github.com/teefspiracy/portfolio",
+    href: "https://github.com/tifagg/portfolio",
     theme: "light",
     desc: "This retro 8-bit portfolio site built with Next.js and NES.css.",
   },
   {
     title: "node-top",
-    href: "https://github.com/teefspiracy/node-top",
+    href: "https://github.com/tifagg/node-top",
     theme: "dark",
     desc: "Node.js experiment/project from the Tifa Labs repo collection.",
   },
   {
     title: "aegis-core",
-    href: "https://github.com/teefspiracy/aegis-core",
+    href: "https://github.com/tifagg/aegis-core",
     theme: "light",
     desc: "Core experimental project with a security-inspired name and structure.",
   },
