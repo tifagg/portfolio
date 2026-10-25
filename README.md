@@ -41,7 +41,7 @@ Some repositories are private while they are still in progress. Demos, screensho
 
 ## Live Site
 
-https://teefspiracy-portfolio.netlify.app
+https://tifagg-portfolio.netlify.app
 
 ## Case Studies
 
