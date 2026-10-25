@@ -28,7 +28,7 @@ export default function Header() {
 
             <div className="flex gap-2 justify-center items-center">
               <a
-                href="https://github.com/teefspiracy"
+                href="https://github.com/tifagg"
                 target="_blank"
                 rel="noreferrer"
                 className="nes-btn"
@@ -48,7 +48,7 @@ export default function Header() {
               </a>
 
               <a
-                href="mailto:tifa.codes@gmail.com"
+                href="mailto:yungteefst@gmail.com"
                 className="nes-btn"
                 aria-label="Email"
               >
