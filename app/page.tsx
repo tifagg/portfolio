@@ -63,12 +63,6 @@ export default function Home() {
           still terminally online.
         </p>
 
-        <br />
-
-        <p>
-          [ status: probably listening to music and
-          exploring the internet ]
-        </p>
       </div>
 
       {/* SKILLS */}
