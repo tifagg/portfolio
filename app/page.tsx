@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-between p-10 gap-10">
+    <main className="flex flex-col items-center justify-between p-4 gap-5 md:p-10 md:gap-10">
 
       <h1 className="text-center">
         Tifa Labs: retro code archive
