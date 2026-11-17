@@ -91,3 +91,12 @@ a {
     text-wrap: balance;
   }
 }
+@media (max-width: 600px) {
+  main {
+    font-size: 11px;
+  }
+
+  .nes-container {
+    padding: 1rem;
+  }
+}
