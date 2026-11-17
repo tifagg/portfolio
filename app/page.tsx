@@ -59,8 +59,7 @@ export default function Home() {
 
         <p>
           anyway, that's a little about the human behind
-          the screen. still learning, still experimenting,
-          still terminally online.
+          the screen.
         </p>
 
       </div>
