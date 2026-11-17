@@ -1,18 +1,28 @@
-header {
-  min-height: 45vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
+/* ==========================
+   TIFA LABS — STYLE
+   ========================== */
+
+* {
+  box-sizing: border-box;
 }
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #0f172a;
   color: #e5e7eb;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
+/* HEADER */
+
 header {
+  min-height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 60px 20px;
   background: #111827;
@@ -24,6 +34,12 @@ h1 {
   color: #38bdf8;
 }
 
+header p {
+  color: #94a3b8;
+}
+
+/* SECTIONS */
+
 section {
   max-width: 800px;
   margin: 30px auto;
@@ -32,7 +48,11 @@ section {
 
 h2 {
   color: #38bdf8;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 10px;
 }
+
+/* PROJECT / LINK CARDS */
 
 .project-card {
   background: #1e293b;
@@ -40,10 +60,71 @@ h2 {
   margin: 15px 0;
   border-radius: 12px;
   border: 1px solid #334155;
+  transition: border-color 0.2s ease,
+              transform 0.2s ease;
 }
+
+.project-card:hover {
+  border-color: #38bdf8;
+  transform: translateY(-2px);
+}
+
+.project-card h3 {
+  color: #e5e7eb;
+  margin-top: 0;
+}
+
+/* LINKS */
+
+a {
+  color: #38bdf8;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #7dd3fc;
+  text-decoration: underline;
+}
+
+/* LISTS */
+
+ul {
+  padding-left: 25px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* FOOTER */
 
 footer {
   text-align: center;
   padding: 20px;
   background: #111827;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  header {
+    min-height: 35vh;
+    padding: 45px 18px;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  section {
+    margin: 20px auto;
+    padding: 18px;
+  }
+
+  .project-card {
+    padding: 16px;
+  }
 }
