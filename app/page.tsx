@@ -49,10 +49,10 @@ export default function Home() {
 
         <p>
           music is a HUGE part of my life. i love blasting
-          music, especially XXXTENTACION, $uicideboy$,
+          music, especially XXXTENTACION, $uicideboy$, Yeat,
           Lil Peep and plenty of other artists.
           underground hip-hop, techno, house — if it
-          sounds good loud, i'm probably listening to it. :P
+          sounds good loud, i'm probably listening to it ;P
         </p>
 
         <br />
