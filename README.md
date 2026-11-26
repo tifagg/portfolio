@@ -1,55 +1,71 @@
-# Tifa Labs Portfolio
+Tifa’s Workshop
 
-A retro 8-bit personal portfolio built with Next.js, TypeScript, Tailwind CSS, and NES.css.
+A retro 8-bit personal developer portfolio built with Next.js, TypeScript, Tailwind CSS, and NES.css.
 
-## System Online
+Welcome to the Workshop!
 
-This site is my digital archive for projects, experiments, and learning logs around code, cybersecurity, game dev, and weird little interfaces.
+This is my little corner of the internet — a collection of projects, experiments, ideas, and things I’m learning along the way.
 
-## Tech Stack
+I’m a student and aspiring developer interested in programming, cybersecurity, AI, systems development, and creative technology. I enjoy exploring different tools, experimenting with ideas, and learning by building things myself.
 
-- Next.js
-- TypeScript
-- Tailwind CSS
-- NES.css
+Not everything here is finished, and that’s part of the process.
 
-## Projects
+Tech Stack
 
-- **security-learning-lab** — cybersecurity learning lab for notes, safe practice, and security concepts.
-- **cybpick** — cyber-themed experiment from the Tifa Labs archive.
-- **android-ai-server** — Android + AI server experiment for local/networked AI workflows.
-- **portfolio** — this retro 8-bit portfolio site.
-- **node-top** — Node.js experiment from the Tifa Labs repo collection.
-- **aegis-core** — core experimental project with a security-inspired structure.
+* Next.js
+* TypeScript
+* Tailwind CSS
+* NES.css
 
-## Run Locally
+Project Archive
 
-```bash
+A collection of repositories and experiments from my development journey:
+
+* security-learning-lab — A cybersecurity learning lab for notes, safe practice, and exploring security concepts.
+* cybpick — A cyber-themed project experiment exploring movie recommendations.
+* android-ai-server — An experiment exploring Android and AI server workflows.
+* portfolio — The source code for this retro 8-bit personal portfolio.
+* node-top — A Node.js experiment from my collection of development projects.
+* aegis-core — An experimental project with a security-inspired structure.
+
+Some repositories are public, while others remain private during development.
+
+Development Status
+
+I’m still learning, experimenting, and improving my skills.
+
+Projects may be unfinished, experimental, or subject to change. Some repositories are kept private while I work on them. I’ll share more details, demos, and screenshots as projects develop.
+
+This portfolio is a reflection of my learning process, not a showcase of everything being production-ready.
+
+Run Locally
+
+Clone the repository and install dependencies:
+
 npm install
 npm run dev
-```
 
-Open:
+Open your browser at:
 
-```txt
 http://localhost:3000
-```
 
-## Note
-
-Some repositories are private while they are still in progress. Demos, screenshots, and summaries may be added later.
-
-## Live Site
+Live Website
 
 https://tifagg-portfolio.netlify.app
 
-## Case Studies
+Project Case Studies
 
-Project writeups are available inside the site:
+Explore individual project writeups through the website:
 
-- `/projects/security-learning-lab`
-- `/projects/cybpick`
-- `/projects/android-ai-server`
-- `/projects/portfolio`
-- `/projects/node-top`
-- `/projects/aegis-core`
+* /projects/security-learning-lab
+* /projects/cybpick
+* /projects/android-ai-server
+* /projects/portfolio
+* /projects/node-top
+* /projects/aegis-core
+
+⸻
+
+Still learning. Still building. Always experimenting.
+
+© Tifa’s Workshop
