@@ -1,17 +1,96 @@
 
 import Image from "next/image";
 
+const projects = [
+  {
+    name: "Security Learning Lab",
+    category: "CYBERSECURITY",
+    status: "Learning project",
+    description:
+      "A cybersecurity learning space for notes, safe practice, and exploring security concepts through small projects.",
+    tags: ["Python", "Security", "Education"],
+  },
+  {
+    name: "Cybpick",
+    category: "EXPERIMENT",
+    status: "Experiment",
+    description:
+      "A Python-based movie recommendation project exploring recommendations and personalized discovery.",
+    tags: ["Python", "Recommendation"],
+  },
+  {
+    name: "AEGIS",
+    category: "AI / DEVELOPMENT",
+    status: "In development",
+    description:
+      "An experimental AI assistant project exploring language models, RAG systems, and intelligent workflows.",
+    tags: ["AI", "Python", "RAG"],
+  },
+  {
+    name: "Tifinity OS",
+    category: "SYSTEMS",
+    status: "Experiment",
+    description:
+      "A personal operating system development experiment built while exploring Rust, kernels, and low-level computing.",
+    tags: ["Rust", "OS Development"],
+  },
+  {
+    name: "TAC-CON",
+    category: "INTERFACE / DEVELOPMENT",
+    status: "Experiment",
+    description:
+      "An experimental tactical console interface inspired by futuristic desktop environments and system dashboards.",
+    tags: ["Electron", "JavaScript", "UI"],
+  },
+];
+
+const skills = [
+  "Python",
+  "C++",
+  "JavaScript",
+  "HTML/CSS",
+  "Next.js",
+  "Rust",
+  "Cybersecurity",
+];
+
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-between p-4 gap-5 md:p-10 md:gap-10">
+    <main className="mx-auto flex w-full max-w-6xl flex-col items-center gap-8 px-4 py-8 md:gap-12 md:px-8 md:py-12">
 
-      <h1 className="text-center">
-        Tifa Labs: retro code archive
-      </h1>
+      {/* HEADER */}
+      <header className="flex w-full flex-col items-center gap-3 py-8 text-center">
+        <p className="text-sm uppercase tracking-widest">
+          [ welcome to my corner of the internet ]
+        </p>
+
+        <h1 className="text-center">
+          tifa's workshop
+        </h1>
+
+        <p className="max-w-xl text-center">
+          projects, experiments, and things in progress.
+          <br />
+          building stuff, breaking stuff, learning along the way. xD
+        </p>
+
+        <div className="mt-3 flex flex-wrap justify-center gap-3">
+          <a href="#projects" className="nes-btn is-primary">
+            Projects
+          </a>
+
+          <a href="#about" className="nes-btn">
+            About me
+          </a>
+        </div>
+      </header>
 
       {/* ABOUT ME */}
-      <div className="nes-container with-title is-centered bg-blue-200 md:w-[45rem]">
-        <p className="title">A LITTLE ABOUT ME</p>
+      <section
+        id="about"
+        className="nes-container with-title is-centered w-full bg-blue-200 md:max-w-3xl"
+      >
+        <p className="title">ABOUT ME</p>
 
         <p>
           heyyy, i'm Tifa! i'm a high school student who's
@@ -48,25 +127,14 @@ export default function Home() {
         <br />
 
         <p>
-          music is a HUGE part of my life. i love blasting
-          music, especially XXXTENTACION, $uicideboy$, Yeat,
-          Lil Peep and plenty of other artists.
-          underground hip-hop, techno, house — if it
-          sounds good loud, i'm probably listening to it ;P
-        </p>
-
-        <br />
-
-        <p>
           anyway, that's a little about the human behind
           the screen.
         </p>
-
-      </div>
+      </section>
 
       {/* SKILLS */}
-      <div className="nes-container is-rounded bg-white md:w-[45rem]">
-        <div className="flex flex-col items-center justify-center gap-4">
+      <section className="nes-container is-rounded w-full bg-white md:max-w-3xl">
+        <div className="flex flex-col items-center gap-5">
 
           <Image
             width={100}
@@ -75,18 +143,12 @@ export default function Home() {
             alt="Pixel shield"
           />
 
-          <p className="text-center">Current skills unlocked</p>
+          <p className="text-center">
+            Current skills unlocked
+          </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
-            {[
-              "Python",
-              "C++",
-              "JavaScript",
-              "HTML/CSS",
-              "Next.js",
-              "Rust",
-              "Cyber",
-            ].map((skill, index) => (
+          <div className="grid w-full grid-cols-2 gap-3 sm:grid-cols-3">
+            {skills.map((skill, index) => (
               <span key={skill} className="nes-badge">
                 <span
                   className={
@@ -102,13 +164,96 @@ export default function Home() {
               </span>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* PROJECTS / DEV LOG */}
+      <section
+        id="projects"
+        className="nes-container with-title w-full bg-white md:max-w-4xl"
+      >
+        <p className="title">DEV LOG / PROJECTS</p>
+
+        <div className="mb-6 text-center">
+          <p>
+            Things i've built, experimented with, or am
+            currently working on.
+          </p>
+        </div>
+
+        {/* DEVELOPMENT NOTICE */}
+        <div className="nes-container is-dark mb-6">
+          <p className="font-bold">
+            A NOTE FROM THE WORKSHOP
+          </p>
+
+          <p>
+            i'm still learning and improving my skills.
+            not everything here is finished or production-ready.
+            some projects are experiments, works in progress,
+            or personal learning projects.
+          </p>
+
+          <br />
+
+          <p>
+            some repositories are private while i'm still
+            developing them. public projects will be linked
+            whenever they're ready to share.
+          </p>
+        </div>
+
+        {/* PROJECT CARDS */}
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+
+          {projects.map((project) => (
+            <article
+              key={project.name}
+              className="nes-container is-rounded flex flex-col gap-3"
+            >
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <span className="text-xs opacity-70">
+                  {project.category}
+                </span>
+
+                <span className="text-xs">
+                  [{project.status}]
+                </span>
+              </div>
+
+              <h3 className="text-xl font-bold">
+                {project.name}
+              </h3>
+
+              <p className="text-sm">
+                {project.description}
+              </p>
+
+              <div className="mt-auto flex flex-wrap gap-2 pt-3">
+                {project.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="border-2 border-black px-2 py-1 text-xs"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </article>
+          ))}
 
         </div>
-      </div>
+
+        <div className="mt-6 text-center">
+          <p className="text-sm">
+            more experiments coming soon...
+          </p>
+        </div>
+      </section>
 
       {/* ELSEWHERE ON THE INTERNET */}
-      <div className="nes-container with-title bg-white md:w-[45rem]">
-        <p className="title">Elsewhere on the internet</p>
+      <section className="nes-container with-title w-full bg-white md:max-w-3xl">
+        <p className="title">ELSEWHERE ON THE INTERNET</p>
 
         <div className="grid grid-cols-1 gap-4">
 
@@ -149,11 +294,11 @@ export default function Home() {
           </div>
 
         </div>
-      </div>
+      </section>
 
       {/* CURRENTLY INTO */}
-      <div className="nes-container with-title bg-white md:w-[45rem]">
-        <p className="title">Currently into</p>
+      <section className="nes-container with-title w-full bg-white md:max-w-3xl">
+        <p className="title">CURRENTLY INTO</p>
 
         <ul className="list-disc pl-6">
           <li>Cybersecurity and software development</li>
@@ -162,7 +307,18 @@ export default function Home() {
           <li>Anime, manga and storytelling</li>
           <li>Music, writing and production</li>
         </ul>
-      </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="py-8 text-center">
+        <p>made with curiosity and questionable amounts of caffeine.</p>
+        <p className="mt-2 text-sm">
+          © {new Date().getFullYear()} Tifa's Workshop
+        </p>
+        <p className="mt-2 text-xs">
+          still learning. still building. always experimenting. xD
+        </p>
+      </footer>
 
     </main>
   );
