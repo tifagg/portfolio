@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { Press_Start_2P } from "next/font/google";
 import "./globals.css";
@@ -10,8 +11,9 @@ const pressStart2P = Press_Start_2P({
 });
 
 export const metadata: Metadata = {
-  title: "Tifa Labs | Retro Code Archive",
-  description: "Retro 8-bit portfolio for Tifa Labs projects.",
+  title: "Tifa's Workshop | Personal Website",
+  description:
+    "A little corner of the internet where I explore programming, cybersecurity, technology, and random experiments. Still learning, still building xD",
   icons: {
     icon: "/icon.svg",
   },
