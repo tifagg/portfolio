@@ -51,7 +51,7 @@ http://localhost:3000
 
 Live Website
 
-tiffanyspeaking.netlify.app
+https://tiffanyspeaking.netlify.app/
 
 Project Case Studies
 
