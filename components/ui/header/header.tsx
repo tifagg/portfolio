@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState } from "react";
@@ -11,6 +12,7 @@ export default function Header() {
         type="button"
         className="nes-btn is-primary"
         onClick={() => setIsShowModal(!isShowModal)}
+        aria-label="Open social links"
       >
         <i className="nes-icon trophy"></i>
       </button>
@@ -18,13 +20,19 @@ export default function Header() {
       {isShowModal && (
         <div className="nes-dialog absolute top-20 right-5 bg-white z-10 w-72">
           <div className="flex justify-end">
-            <button onClick={() => setIsShowModal(false)}>
+            <button
+              type="button"
+              onClick={() => setIsShowModal(false)}
+              aria-label="Close social links"
+            >
               <i className="nes-icon close is-small"></i>
             </button>
           </div>
 
           <div className="p-3 flex flex-col gap-4">
-            <p className="title text-sm text-center">Tifa Links</p>
+            <p className="title text-sm text-center">
+              FIND ME ONLINE
+            </p>
 
             <div className="flex gap-2 justify-center items-center">
               <a
@@ -57,7 +65,7 @@ export default function Header() {
             </div>
 
             <div className="nes-container is-dark text-xs">
-              <p>Tifa Labs // projects, experiments, contact</p>
+              <p>tifa's workshop // find me around the web :3</p>
             </div>
           </div>
         </div>
