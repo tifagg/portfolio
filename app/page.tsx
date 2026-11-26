@@ -1,49 +1,6 @@
 
 import Image from "next/image";
 
-const projects = [
-  {
-    name: "Security Learning Lab",
-    category: "CYBERSECURITY",
-    status: "Learning project",
-    description:
-      "A cybersecurity learning space for notes, safe practice, and exploring security concepts through small projects.",
-    tags: ["Python", "Security", "Education"],
-  },
-  {
-    name: "Cybpick",
-    category: "EXPERIMENT",
-    status: "Experiment",
-    description:
-      "A Python-based movie recommendation project exploring recommendations and personalized discovery.",
-    tags: ["Python", "Recommendation"],
-  },
-  {
-    name: "AEGIS",
-    category: "AI / DEVELOPMENT",
-    status: "In development",
-    description:
-      "An experimental AI assistant project exploring language models, RAG systems, and intelligent workflows.",
-    tags: ["AI", "Python", "RAG"],
-  },
-  {
-    name: "Tifinity OS",
-    category: "SYSTEMS",
-    status: "Experiment",
-    description:
-      "A personal operating system development experiment built while exploring Rust, kernels, and low-level computing.",
-    tags: ["Rust", "OS Development"],
-  },
-  {
-    name: "TAC-CON",
-    category: "INTERFACE / DEVELOPMENT",
-    status: "Experiment",
-    description:
-      "An experimental tactical console interface inspired by futuristic desktop environments and system dashboards.",
-    tags: ["Electron", "JavaScript", "UI"],
-  },
-];
-
 const skills = [
   "Python",
   "C++",
@@ -75,10 +32,6 @@ export default function Home() {
         </p>
 
         <div className="mt-3 flex flex-wrap justify-center gap-3">
-          <a href="#projects" className="nes-btn is-primary">
-            Projects
-          </a>
-
           <a href="#about" className="nes-btn">
             About me
           </a>
@@ -164,90 +117,6 @@ export default function Home() {
               </span>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* PROJECTS / DEV LOG */}
-      <section
-        id="projects"
-        className="nes-container with-title w-full bg-white md:max-w-4xl"
-      >
-        <p className="title">DEV LOG / PROJECTS</p>
-
-        <div className="mb-6 text-center">
-          <p>
-            Things i've built, experimented with, or am
-            currently working on.
-          </p>
-        </div>
-
-        {/* DEVELOPMENT NOTICE */}
-        <div className="nes-container is-dark mb-6">
-          <p className="font-bold">
-            A NOTE FROM THE WORKSHOP
-          </p>
-
-          <p>
-            i'm still learning and improving my skills.
-            not everything here is finished or production-ready.
-            some projects are experiments, works in progress,
-            or personal learning projects.
-          </p>
-
-          <br />
-
-          <p>
-            some repositories are private while i'm still
-            developing them. public projects will be linked
-            whenever they're ready to share.
-          </p>
-        </div>
-
-        {/* PROJECT CARDS */}
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
-
-          {projects.map((project) => (
-            <article
-              key={project.name}
-              className="nes-container is-rounded flex flex-col gap-3"
-            >
-              <div className="flex flex-wrap items-center justify-between gap-2">
-                <span className="text-xs opacity-70">
-                  {project.category}
-                </span>
-
-                <span className="text-xs">
-                  [{project.status}]
-                </span>
-              </div>
-
-              <h3 className="text-xl font-bold">
-                {project.name}
-              </h3>
-
-              <p className="text-sm">
-                {project.description}
-              </p>
-
-              <div className="mt-auto flex flex-wrap gap-2 pt-3">
-                {project.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="border-2 border-black px-2 py-1 text-xs"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </article>
-          ))}
-
-        </div>
-
-        <div className="mt-6 text-center">
-          <p className="text-sm">
-            more experiments coming soon...
-          </p>
         </div>
       </section>
 
